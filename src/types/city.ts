@@ -1,4 +1,3 @@
-// types/city.ts
 import { WeatherType } from '@/constants/weather';
 
 export interface City {

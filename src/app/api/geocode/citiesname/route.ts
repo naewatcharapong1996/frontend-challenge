@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server';
+import { ApiKey } from '@/constants/config';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const query = searchParams.get('q');
-  const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
+  const apiKey = ApiKey;
   
   if (!query) {
     return NextResponse.json({ error: 'Query parameter is required' }, { status: 400 });

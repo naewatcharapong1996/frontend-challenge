@@ -49,7 +49,6 @@ const WeatherIcon: React.FC<WeatherIconProps> = ({
         return 'M12 3v3m0 4.5v4.5m0-12v.75m0 13.5v.75M6.75 7.5h-3m13.5 0h-3m-13.5 6h3m16.5 0h-3M7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0z';
       
       default:
-        // Default icon for unknown weather types
         return 'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z';
     }
   };
